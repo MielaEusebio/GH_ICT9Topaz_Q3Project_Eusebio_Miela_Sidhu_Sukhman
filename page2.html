@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width-device-width, initial-scale=1.8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+   <title>ICT 9 Project</title>
+   <style>
+       body {
+           background-image: url(786caef9-1.png);
+           background-repeat: no-repeat;  
+           background-size: cover;         
+           background-attachment: fixed;
+           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+       }
+        .box-bg {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+        }
+        footer {
+    background-color: rgba(255, 249, 249, 0.6); 
+    position: fixed;
+    bottom: 0;
+    left: 0; 
+    width: 150%;
+    height: auto;
+    color: #A1674A
+}
+</style>
+</head>
+<body>
+   <nav class="navbar navbar-expand-sm navbar-light bg-light">
+       <div class="container-fluid">
+           <a href="index.html" class="navbar-brand"></a>
+               <img src="RideMo.png" alt="Logo" width="65" height="65">
+           <div class="collapse navbar-collapse" id="mynavbar">
+               <ul class="navbar-nav me-auto">
+                   <li class="nav-items"><a href="index.html" class="nav-link" style="color: #A1674A">Home</a></li>
+                   <li class="nav-items"><a href="fare1.html" class="nav-link" style="color: #A1674A">Fare Matrix</a></li>
+                   <li class="nav-items"><a href="page2.html" class="nav-link" style="color: #A1674A">Registration</a></li>
+                   <li class="nav-items"><a href="help.html" class="nav-link" style="color: #A1674A">Help</a></li>
+               </ul>
+               <form class="d-flex">
+                <button type="button" class="btn btn-light" style="color: #AB9B96" onclick="window.location.href='page2.html'">
+  Create Account
+</button>
+`           <button type="button" class="btn btn-link" style="color: #AB9B96" onclick="window.location.href='fare1.html'">Book now</button>
+               </form>
+           </div>
+       </div>
+   </nav>
+   <br>
+<h1 style="text-align: center; color: #A63A50" >Registration</h1>
+    <div class="container mt-5">
+        <form class="box-bg">
+            <h3 style="color: #BA6E6E">Register</h3><br>
+                <div class="row mb-3">
+                    <div class="col">
+                        <h4>First Name</h4>
+                            <input type="text" class="form-control form-control-sm" placeholder="First">
+                    </div>
+                    <div class="col">
+                        <h4>Last Name</h4>
+                            <input type="text" class="form-control form-control-sm" placeholder="Last">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <h4>Age</h4>
+                            <input type="text" class="form-control form-control-sm" placeholder="Age">
+                    </div>
+                    <div class="col">
+                        <h4>Gender</h4>
+                            <select class="form-select">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                    </div>
+                </div>
+                <h3 style="color: #BA6E6E">Contact Details</h3><br>
+                    <h4>Email Address</h4>
+                    <input type="text" placeholder="student@example.com"><br>
+            <br>
+                    <h4>Contact Number</h4>
+                    <input type="number" placeholder="0913-6184-0967"><br>
+                <br>
+                 <div class="row mb-3">
+                    <div class="col">
+                        <h4>Enter your username</h4>
+                            <input type="text" class="form-control form-control-sm" placeholder="Username">
+                    </div>
+                    <div class="col">
+                        <h4>Enter your password</h4>
+                            <input type="password" class="form-control form-control-sm" placeholder="Password"><br>
+                        </div>
+                        <label>
+                        <input type="checkbox" name="terms" required> I accept the Terms of Use and Privacy Policy</label>
+                        <br>
+
+                        <button type="button" class="btn btn-link" style="color: #AB9B96; font-size:15px; text-align:left; margin:10px;" onclick="window.location.href='https://drive.google.com/file/d/1Mkewbu7jWVJIlAcJbqM5gcFSOVVUI5bv/view?usp=sharing'">View conditions</button>
+                        
+                    <br><br>
+                <a href="page3.html">
+        <span style="margin:900px;"><button type="button" class="btn btn-primary">Create my Account</button></span>
+                </a>
+      <div>
+        <span style="margin:990px;"><button type="submit" class="btn btn-light btn-sm">Cancel</button></span>
+
+      </div>
+        </form>
+        
+        <footer style="text-align: center;">Sukhman K. Sidhu & Miela Eusebio | 9 Topaz RideMo ©2026</footer>
+    </div>
+
+</body>
+</html>
