@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.8">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <title>ICT 9 Project</title>
+  <style>
+      body {
+          background-image: url(786caef9-1.png);
+          background-repeat: no-repeat; 
+          background-size: cover;        
+          background-attachment: fixed;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+      }
+       .box-bg {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+        }
+     footer {
+    background-color: rgba(255, 249, 249, 0.6); 
+    position: fixed;
+    bottom: 0;
+    left: 0; 
+    width: 150%;
+    height: auto;
+    color: #A1674A
+}
+
+ </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="container-fluid">
+          <a href="index.html" class="navbar-brand"></a>
+              <img src="RideMo.png" alt="Logo" width="65" height="65">
+          <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav me-auto">
+                  <li class="nav-items"><a href="index.html" class="nav-link" style="color: #A1674A">Home</a></li>
+                  <li class="nav-items"><a href="fare1.html" class="nav-link" style="color: #A1674A">Fare Matrix</a></li>
+                  <li class="nav-items"><a href="registration.html" class="nav-link" style="color: #A1674A">Registration</a></li>
+                   <li class="nav-items"><a href="schedule.html" class="nav-link" style="color: #A1674A">Schedule</a></li>
+                  <li class="nav-items"><a href="help.html" class="nav-link" style="color: #A1674A">Help</a></li>
+              </ul>
+              <form class="d-flex">
+                  <button type="button" class="btn btn-light" style="color: #AB9B96" onclick="window.location.href='page2.html'">
+  Create Account
+</button>
+            <button type="button" class="btn btn-link" style="color: #AB9B96" onclick="window.location.href='fare1.html'">Book now</button>
+
+              </form>
+          </div>
+      </div>
+  </nav>
+  <br>
+  <div class="container mt-5;">
+    <form class="box-bg" style="margin:50px;">
+    <h1 style="color: #BA6E6E; text-align: center;" >Fare Matrix (Discounted)</h1>
+    <h2 style="color:#a95f5f; text-align: center;">MRT Line 3</h2>
+    <hr>
+
+    <img src="Fare Matrix MRT Line 3.png" alt="image of MRT Line 3 (Yellow)" class="img-fluid img-thumbnail mx-auto d-block" width = "600">
+    <p style="color:#AB9B96; text-align:center;">The line included in the calculations is the one that is colored <u>yellow</u></p>
+    <hr>
+
+    <h3 style="color: #BA6E6E; text-align: center;" >Enter your destination:<br></h3>
+    <p style="color:#AB9B96; text-align:center; font-size:smaller;"><b>Please enter the stations in this format: _____ to _____ </b></p>
+    <br>
+
+    <div style="text-align: center;">
+    <input type="text" id="mytext" placeholder="(i.e. north avenue to taft avenue)"><br>
+        <!-- this is the textbox of the user input -->
+    <br>
+
+    <button type="button" class="btn btn-primary" id="mysubmit">Calculate</button>
+    <br><br>
+
+    <hr>
+
+    <span style="text-align:left; color:#a95f5f;"><h2 id="resultElement"></h2></span>
+        <!-- this is the element where the result will be displayed -->
+
+    <p style="color:#AB9B96;"><u><a href="fare1.html" class="nav-link" style="color: #A1674A">Click here to apply calculations without discounts applied.</a></u></p>
+
+    </div>
+    <script src="farematrix_2.js"></script>
+    </form>
+        
+
+
+<div class="row mb-3">
+            <div class="col">
+            </div>
+            
+        <footer style="text-align: center;"> Sukhman K. Sidhu & Miela Eusebio | 9 Topaz RideMo ©2026</footer>
+    </div>
+    </body>
+</html>
