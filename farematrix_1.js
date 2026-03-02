@@ -21,7 +21,7 @@ mySubmit.onclick = function(){
 // ChatGPT used to double check computations
     // NORTH AVENUE = SOURCE
     if(result === 'north avenue to quezon avenue'){
-        resultElement.textContent =  ('Your payment should be around ' + (basefare*0.80) + ' pesos');
+        resultElement.textContent =  ('Your payment should be around ' + (basefare) + ' pesos');
         //inline suggestion of computation
     }
     else if(result === 'north avenue to kamuning'){
@@ -524,5 +524,6 @@ mySubmit.onclick = function(){
             else if(result === 'taft avenue to magallanes'){
         resultElement.textContent = ('Your payment should be around ' + (basefare) + ' pesos');
     }
+
 
 }
