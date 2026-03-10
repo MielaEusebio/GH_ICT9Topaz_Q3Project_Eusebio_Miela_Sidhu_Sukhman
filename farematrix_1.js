@@ -18,7 +18,7 @@ mySubmit.onclick = function(){
     // "is this code possible?"
     // "Key changes: Replaced Text(result) with result.trim().toLowerCase() Changed comparison strings to lowercase ('taft' and 'angeles') Used === instead of == (better practice)"
 
-// ChatGPT used to double check computations
+// ChatGPT used to double check computations (https://chatgpt.com/share/69afd12a-b708-8005-b8cf-df65841c1d07)
     // NORTH AVENUE = SOURCE
     if(result === 'north avenue to quezon avenue'){
         resultElement.textContent =  ('Your payment should be around ' + (basefare) + ' pesos');
@@ -528,5 +528,6 @@ mySubmit.onclick = function(){
         else{
         resultElement.textContent = `This term is not in our system. Please try again and check for typo's.`;
     }
+
 
 }
